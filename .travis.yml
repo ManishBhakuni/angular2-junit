@@ -8,6 +8,11 @@ branches:
   only:
   - master
 
+env:
+  global:
+    - CHROME_BIN=/usr/bin/google-chrome
+    - DISPLAY=:99.0
+
 before_script:
   #- npm install -g @angular/cli  
   
