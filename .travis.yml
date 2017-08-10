@@ -9,10 +9,11 @@ branches:
   - master
 
 before_script:
-  - npm install -g @angular/cli  
+  #- npm install -g @angular/cli  
   
 script:
-  - ng build
+  - ng test
+  #- ng build
   
 deploy:
   provider: azure_web_apps 
