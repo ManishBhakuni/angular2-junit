@@ -1,0 +1,19 @@
+#.travis.yml
+
+language: node_js
+node_js:
+  - "6.9"
+ 
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli  
+  
+script:
+  - ng build
+  
+deploy:
+  provider: azure_web_apps 
+  verbose: true
