@@ -24,8 +24,4 @@ script:
   - ng test
 
 after_success:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js  
-    
-deploy:
-  provider: azure_web_apps 
-  verbose: true
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
