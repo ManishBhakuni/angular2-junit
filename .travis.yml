@@ -20,9 +20,9 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   
 script:
-  - ng test
-  - ng test --code-coverage 
-  #true --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  #- ng test
+  #- ng test --code-coverage 
+  - ng test --code-coveragetrue --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   #- ng build
   
 deploy:
