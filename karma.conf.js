@@ -32,7 +32,7 @@ module.exports = function (config) {
       codeCoverage: 'coverage',
       environment: 'dev'
     },
-    reporters: ['coverage', 'coveralls'],
+    reporters: ['progress', 'coverage'],
 	  port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
