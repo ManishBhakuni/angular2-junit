@@ -26,7 +26,8 @@ script:
   #- npm build
   - ng test --code-coverage
   - ls
-
+  - ng build --prod
+  - ls
 
 #after_success:
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
