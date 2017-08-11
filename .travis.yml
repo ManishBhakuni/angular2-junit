@@ -22,7 +22,8 @@ before_script:
 script:
   #- ng test
   #- ng test --code-coverage 
-  - ng test --code-coveragetrue --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  #- ng test --code-coveragetrue --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - ng test --code-coveragetrue
   #- ng build
   
 deploy:
