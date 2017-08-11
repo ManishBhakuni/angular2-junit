@@ -13,6 +13,8 @@ env:
     - CHROME_BIN=/usr/bin/google-chrome
     - DISPLAY=:99.0
 
+install: true
+
 before_script:
   #- npm install -g @angular/cli  
   - export CHROME_BIN=chromium-browser
@@ -21,7 +23,7 @@ before_script:
   
 script:
   #- ng test --code-coverage true --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
-  - ng test
+  - ng build
 
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
