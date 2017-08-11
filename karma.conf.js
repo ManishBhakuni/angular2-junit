@@ -6,6 +6,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-firefox-launcher'),
+      require('karma-jasmine-html-reporter'),
       require('@angular/cli/plugins/karma'),
       require('karma-coverage')
     ],
@@ -34,9 +35,7 @@ module.exports = function (config) {
       codeCoverage: 'coverage',
       environment: 'dev'
     },
-    reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['progress', 'coverage']
-              : ['progress'],
+    reporters: ['coverage', 'coveralls'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
