@@ -31,8 +31,8 @@ script:
   #- ng build
   #- ls
   #- ng test --code-coverage --reporters=coverage
-  - ng test --code-coverage --reporters=coverage-istanbul
-  
+  #- ng test --code-coverage --reporters=coverage-istanbul
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 #after_success:
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
