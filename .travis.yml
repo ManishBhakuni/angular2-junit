@@ -30,7 +30,8 @@ script:
   #- ls
   - ng build
   - ls
-  - ng test
+  - ng test --code-coverage --reporters=coverage
+  
 
 #after_success:
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
