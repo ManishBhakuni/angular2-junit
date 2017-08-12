@@ -28,9 +28,10 @@ script:
   #- ls
   #- ng build --prod
   #- ls
-  - ng build
-  - ls
-  - ng test --code-coverage --reporters=coverage
+  #- ng build
+  #- ls
+  #- ng test --code-coverage --reporters=coverage
+  - ng test --code-coverage --reporters=coverage-istanbul
   
 
 #after_success:
