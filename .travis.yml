@@ -52,4 +52,5 @@ deploy:
   username: manishb123
   password: p@ssw04d
   site: angular2junitdemo
+  verbose: true
 
