@@ -17,12 +17,17 @@ module.exports = function (config) {
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
+    /*
 	 coverageReporter: {
       dir : 'coverage/',
         reporters: [
           { type: 'html' },
           { type: 'lcov' }
         ]
+    },
+    */
+    coverageReporter: {
+     type:'text'
     },
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly' ],
