@@ -24,15 +24,15 @@ script:
   #- ng test --code-coverage true --watch false && cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   #- npm test --code-coverage
   #- npm build
-  #- ng test --code-coverage
-  #- ls
+  - ng test --code-coverage
+  - ls
   #- ng build --prod
   #- ls
   #- ng build
   #- ls
   #- ng test --code-coverage --reporters=coverage
   #- ng test --code-coverage --reporters=coverage-istanbul
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 #after_success:
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
