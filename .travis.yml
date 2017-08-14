@@ -53,5 +53,5 @@ deploy:
   password: p@ssw04d
   site: angular2junitdemo
   skip_cleanup: true
-  verbose: true
+  #verbose: true
 
