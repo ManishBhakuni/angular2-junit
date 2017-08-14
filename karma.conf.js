@@ -17,7 +17,7 @@ module.exports = function (config) {
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    /*
+    
 	 coverageReporter: {
       dir : 'coverage/',
         reporters: [
@@ -25,10 +25,12 @@ module.exports = function (config) {
           { type: 'lcov' }
         ]
     },
-    */
+    
+    /*
     coverageReporter: {
      type:'text'
     },
+    */
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
