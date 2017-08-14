@@ -49,9 +49,8 @@ after_success:
 
 deploy:
   provider: azure_web_apps
-  username: manishb123
-  password: p@ssw04d
+  username: manishb123456
+  password: manishb123456
   site: angular2junitdemo
-  #skip_cleanup: true
+  skip_cleanup: true
   verbose: true
-
