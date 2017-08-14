@@ -52,5 +52,5 @@ deploy:
   username: manishb123456
   password: manishb123456
   site: angular2junitdemo
-  #skip_cleanup: true
+  skip_cleanup: true
   verbose: true
