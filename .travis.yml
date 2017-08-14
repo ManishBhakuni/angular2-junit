@@ -45,6 +45,8 @@ script:
 after_success:
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
+before_deploy: "git push origin master:refs/heads/master"
+
 deploy:
   provider: azure_web_apps
   username: manishb123
