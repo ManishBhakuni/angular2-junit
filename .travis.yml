@@ -40,4 +40,10 @@ script:
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
+deploy:
+  provider: azure_web_apps
+  username: manishb123
+  password: p@ssw04d
+  site: angular2junitdemo
+angular2junitdemo
 
