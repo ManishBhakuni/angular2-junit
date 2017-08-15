@@ -13,6 +13,9 @@ env:
     - CHROME_BIN=/usr/bin/google-chrome
     - DISPLAY=:99.0
 
+install:
+  - git fetch --unshallow
+
 before_script:
   #- npm install -g @angular/cli  
   - export CHROME_BIN=chromium-browser
