@@ -39,8 +39,8 @@ script:
   #- ls
   #- ng test --code-coverage
   #- ls
-  - rm dist -r
-  - ls
+  #- rm dist -r
+  #- ls
   - ng build --prod
   - ls
   
