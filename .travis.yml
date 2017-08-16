@@ -48,7 +48,7 @@ script:
 after_success:
   - cd dist
   - git init
-  #- git pull
+  - git pull azure master
   - git add *
   - git commit -m 'commit from travis ci'
   - git remote add azure https://manishb123456:manishb123456@angular2junitdemo02.scm.azurewebsites.net:443/angular2junitdemo02.git
