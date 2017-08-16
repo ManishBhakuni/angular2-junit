@@ -39,19 +39,29 @@ script:
   #- ls
   #- ng test --code-coverage
   #- ls
-  
+  - rm dist -r
+  - ls
   - ng build --prod
+  - ls
   
 # These commands are fine, uncomment them once done with deploy (ng build --prod)
 after_success:
+  - cd dist
+  - git init
+  - git add *
+  - git commit -m 'commit from travis ci'
+  - git remote add azure https://manishb123456:manishb123456@angular2junitdemo01.scm.azurewebsites.net:443/angular2junitdemo01.git
+  - git push azure master
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 #before_deploy: "git push origin master:refs/heads/master"
 
-deploy:
-  provider: azure_web_apps
-  username: manishb123456
-  password: manishb123456
-  site: angular2junitdemo
-  skip_cleanup: true
-  verbose: true
+deploy: 
+  #provider: azure_web_apps
+  #username: manishb123456
+  #password: manishb123456
+  #site: angular2junitdemo
+  #skip_cleanup: true
+  #verbose: true
+  
+  
