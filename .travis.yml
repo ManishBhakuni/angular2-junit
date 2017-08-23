@@ -50,7 +50,7 @@ after_success:
   - git init  
   - git add *
   - git commit -m 'commit from travis ci'
-  - git remote add azure https://manishb123456:manishb123456@angular2junitdemo02.scm.azurewebsites.net:443/angular2junitdemo02.git
+  - git remote add azure https://$Deployment_Username:$Deployment_Password@angular2junitdemo02.scm.azurewebsites.net:443/angular2junitdemo02.git
   #- git pull azure master
   - git push -f azure master
   #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
