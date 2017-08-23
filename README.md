@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ManishBhakuni/angular2-junit.svg?branch=master)](https://travis-ci.org/ManishBhakuni/angular2-junit)
+
 # Angular2Junit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
