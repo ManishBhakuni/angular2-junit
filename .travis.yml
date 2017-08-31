@@ -37,7 +37,7 @@ script:
   - ls
   #- rm coverage -r
   #- ls
-  #- ng test --code-coverage
+  - ng test --code-coverage
   #- ls
   #- rm dist -r
   #- ls
@@ -53,7 +53,7 @@ after_success:
   - git remote add azure https://$Deployment_Username:$Deployment_Password@angular2junitdemo02.scm.azurewebsites.net:443/angular2junitdemo02.git
   #- git pull azure master
   - git push -f azure master
-  #- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 #before_deploy: "git push origin master:refs/heads/master"
 
