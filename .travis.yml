@@ -35,10 +35,10 @@ script:
   
   # These commands are fine, uncomment them once done with deploy (ng build --prod)
   - ls
-  #- rm coverage -r
-  #- ls
+  - rm coverage -r
+  - ls
   - ng test --code-coverage
-  #- ls
+  - ls
   #- rm dist -r
   #- ls
   - ng build --prod
